@@ -1,0 +1,25 @@
+button {
+  margin-top: 1em;
+  box-shadow: 0 0 6px #fa73d9;
+  border: 2px solid #fa73d9;
+  background-color: transparent;
+  font-size: 0.9em;
+  color: #fa73d9;
+  padding: 1em 2em;
+  border-radius: 4em;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+button:hover {
+  background-color: #fa73d9;
+  color: #21212b;
+}
+@media (max-width: 425px) {
+  button {
+    margin-top: -4rem;
+  }
+}
