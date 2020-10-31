@@ -31,7 +31,7 @@ const ADD_LOLLY = gql`
             link
         }
     }
-`;
+`
 
 const DisplayingErrorMessagesSchema = Yup.object().shape({
     rec: Yup.string()
@@ -40,7 +40,7 @@ const DisplayingErrorMessagesSchema = Yup.object().shape({
         .required('Required'),
     sender: Yup.string().required("Required").min(2, 'Too Short!')
         .max(50, 'Too Long!'),
-    msg: Yup.string().required('Required').min(2, 'Too Short')
+    msg: Yup.string().required('Required').min(5, 'Too Short')
 });
 
 const Create = () => {
@@ -112,38 +112,20 @@ const Create = () => {
                     <form className="form-container" onSubmit={formik.handleSubmit}>
                         <div className='form-group'>
                             <label htmlFor="firstName">To</label>
-                            <input
-                                id="rec"
-                                type="text"
-                                placeholder="A lolly for..."
-                                onChange={formik.handleChange}
-                                value={formik.values.rec}
-                            />
+                            <input id="rec" type="text" placeholder="A lolly for..." onChange={formik.handleChange} value={formik.values.rec} />
                         </div>
                         {formik.errors.rec ? <div className="error">{formik.errors.rec}</div> : null}
                         <div className='form-group'>
                             <label htmlFor="message">Say something nice</label>
-                            <textarea
-                                id="msg"
-                                onChange={formik.handleChange}
-                                value={formik.values.msg}
-                            />
+                            <textarea id="msg" onChange={formik.handleChange} value={formik.values.msg} />
                         </div>
                         {formik.errors.msg ? <div className="error">{formik.errors.msg}</div> : null}
                         <div className='form-group'>
                             <label htmlFor="sender">From</label>
-                            <input
-                                id="sender"
-                                type="text"
-                                onChange={formik.handleChange}
-                                value={formik.values.sender}
-                                placeholder="From your friend.."
-                            />
+                            <input id="sender" type="text" onChange={formik.handleChange} value={formik.values.sender} placeholder="From your friend.." />
                         </div>
                         {formik.errors.sender ? <div className="error">{formik.errors.sender}</div> : null}
-                        <div className="space-mob">
-
-                        </div>
+                        <div className="space"></div>
                         <button type="submit">Freeze this lolly and get a link</button>
                     </form></> :
                     <Result
@@ -153,7 +135,7 @@ const Create = () => {
                         msg={data?.addVCard?.msg}
                     />}
             </div>
-        </div >
+        </div>
     )
 }
 export default Create

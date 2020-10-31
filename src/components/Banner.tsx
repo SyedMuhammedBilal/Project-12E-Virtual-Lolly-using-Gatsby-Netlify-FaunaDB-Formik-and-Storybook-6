@@ -1,6 +1,6 @@
 import React from 'react'
 import { Lolly } from './Lolly'
-import "../styles/Banner.css"
+import "../styles/Button.css"
 const Banner = () => {
     return (
         <div className="banner">

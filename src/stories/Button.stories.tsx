@@ -14,7 +14,7 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    label: 'Click Me',
-    onClickFunc: () => console.log("clicked")
+    label: 'Click',
+    onClickFunc: () => console.log("increment")
 
 };

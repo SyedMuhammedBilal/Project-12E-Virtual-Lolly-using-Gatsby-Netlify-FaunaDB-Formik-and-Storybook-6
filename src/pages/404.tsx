@@ -1,13 +1,14 @@
 import React from "react"
 import Header from "../components/Header"
+import "../styles/Create.css"
 
 const NotFound = () => {
   return (
     <div>
       <Header />
-      <div style={{ color: "white", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "4rem", }}>
-        <h1 style={{fontFamily: 'sans-serif'}}>Your lolly is freezing...</h1>
-        <h1 style={{fontFamily: 'sans-serif'}}>Retry after 2-3 minutes😇</h1>
+      <div className='freeze'>
+        <h1>Your lolly is freezing🧊</h1>
+        <h1>Retry after 4-5 minutes🕗</h1>
       </div>
     </div>
   )

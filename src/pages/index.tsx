@@ -3,7 +3,7 @@ import Banner from "../components/Banner"
 import { Button } from "../components/Button"
 import Header from "../components/Header"
 import { navigate } from "@reach/router"
-import "../styles/Home.css"
+import "../styles/Create.css"
 
 export default function Home() {
   return <div className="home">
@@ -11,4 +11,4 @@ export default function Home() {
     <Banner />
     <Button label="Make a new lolly to send to a friend" onClickFunc={() => navigate("/create")} />
   </div>
-}
+};

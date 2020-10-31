@@ -16,10 +16,23 @@ button {
 }
 button:hover {
   background-color: #fa73d9;
-  color: #21212b;
+  color: #dadada;
 }
 @media (max-width: 425px) {
   button {
     margin-top: -4rem;
   }
 }
+.banner {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+@media (max-width: 425px) {
+  .banner {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
