@@ -1,0 +1,16 @@
+{
+  "name": "lollies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lollies.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-lambda": "^2.19.0",
+    "faunadb": "^3.0.1",
+    "shortid": "^2.2.16"
+  }
+}
