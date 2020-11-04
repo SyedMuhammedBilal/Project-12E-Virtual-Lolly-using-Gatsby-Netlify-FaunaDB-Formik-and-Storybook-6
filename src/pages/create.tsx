@@ -50,7 +50,7 @@ const Create = () => {
     const [bottom, setBottom] = useState("#deaa43")
     const [addVCard, { data }] = useMutation(ADD_LOLLY);
 
-    const url = "https://api.netlify.com/build_hooks/5f9c62905d928d2b86c656cf"
+    const url = "https://api.netlify.com/build_hooks/5fa2639f2959592e7790ec83"
 
     useEffect(() => {
         async function runHook() {
